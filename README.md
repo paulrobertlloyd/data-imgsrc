@@ -24,7 +24,7 @@ Should the conditions for enhanced images be met, this element will be replaced 
 If your markup contains thumbnails that link through to higher resolution images (say within a photo gallery or carousel that is progressively enhanced), you can simply add a valueless `data-imgsrc` attribute to each link. The value of the `href` attribute will be utilised by this script. For example, the following linked thumbnail:
 
 ```html
-<a class="pull-left" data-imgsrc href="/path/to/image_hires.jpg" title="View a larger version of this photo">
+<a class="pull-left" data-imgsrc href="/path/to/image_hires.jpg" title="View larger version of this photo">
 	<img src="/path/to/image_lowres.jpg" width="360" alt=""/>
 </a>
 ```
@@ -32,7 +32,7 @@ If your markup contains thumbnails that link through to higher resolution images
 will be replaced as follows:
 
 ```html
-<img class="pull-left"  class="pull-left" src="/path/to/image_hires.jpg"/>
+<img class="pull-left" class="pull-left" src="/path/to/image_hires.jpg"/>
 ```
 
 Again, any classes added to this link will be carried over to new image.
@@ -47,7 +47,7 @@ Once you have added the `data-imgsrc` attribute to placeholder elements and any 
 </script>
 ```
 
-Of course, this script is much more useful when combined with testing for certain device properties. For example, if you wanted to load enhanced images only when the viewport is wider than 640px, you could do so as follows:
+Of course, this script is much more useful when combined with testing for certain device properties. For example, if you wanted to load enhanced images only when the viewport is wider than 40em (640px), you could do so as follows:
 
 ```html
 <script src="data-imgsrc.js"></script>
