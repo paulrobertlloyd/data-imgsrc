@@ -24,7 +24,9 @@ Should the conditions for enhanced images be met, this element will be replaced 
 If your markup contains thumbnails that link through to higher resolution images (say within a photo gallery or carousel that is progressively enhanced), you can simply add a valueless `data-imgsrc` attribute to each link. The value of the `href` attribute will be utilised by this script. For example, the following linked thumbnail:
 
 ```html
-<a class="pull-left" data-imgsrc href="/path/to/image_hires.jpg" title="View a larger version of this photo (116kb)"><img src="/path/to/image_lowres.jpg" width="360" alt=""/></a>
+<a class="pull-left" data-imgsrc href="/path/to/image_hires.jpg" title="View a larger version of this photo">
+	<img src="/path/to/image_lowres.jpg" width="360" alt=""/>
+</a>
 ```
 
 will be replaced as follows:
